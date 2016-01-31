@@ -1,0 +1,400 @@
+<html>
+<head>
+	<title>Weather App</title>
+  <meta charset="utf8">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimal-ui">
+</head>
+<body class = "list">
+  <div class="cities-list">
+    <ul>
+      <li class="is-currentlocation">
+        <a href="#city/currentlocation">
+          <ul>
+            <li>
+              <div class="time"><!-- 8:42 AM --></div>
+              <div class="city-name"><!-- Current Location --></div>
+            </li>
+            <li><!-- 49˚ --></li>
+          </ul>
+        </a>
+      </li>
+      <!-- <li class="is-sanjose">
+        <a href="sanjose.html">
+          <ul>
+            <li>
+              <div class="time">8:42 AM</div>
+              <div class="city-name">San Jose</div>
+            </li>
+            <li>49˚</li>
+          </ul>
+        </a>
+      </li>
+      <li class="is-sydney">
+        <a href="sydney.html">
+          <ul>
+            <li>
+              <div class="time">3:42 AM</div>
+              <div class="city-name">Sydney</div>
+            </li>
+            <li>70˚</li>
+          </ul>
+        </a>
+      </li> -->
+    </ul>
+  </div>
+
+  <div class="city-detail" style = "display: none">
+    <section class="city-header">
+      <h2><!-- San Jose --></h2>
+      <h4><!-- Mostly Cloudy --></h4>
+      <h1><!-- 49˚ --></h1>
+    </section>
+    <section class="today">
+      <ul class="today-overview">
+        <li><!-- Saturday --></li>
+        <li><!-- Yesterday --></li>
+        <li><!-- 62˚ --></li>
+        <li><!-- 46˚ --></li>
+      </ul>
+      <div class="today-hourly-list-container">
+        <ul class="today-hourly-list" style="width: 1536px;">
+          <li>
+            <ul>
+             <!--  <li>Now</li>
+              <li><img src="images/partly-cloudy-day.png"/></li>
+              <li>47˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>9 AM</li>
+              <li><img src="images/partly-cloudy-day.png"/></li>
+              <li>50˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>10 AM</li>
+              <li><img src="images/partly-cloudy-day.png"/></li>
+              <li>53˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>11 AM</li>
+              <li><img src="images/partly-cloudy-day.png"/></li>
+              <li>56˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>12 PM</li>
+              <li><img src="images/partly-cloudy-day.png"/></li>
+              <li>58˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>1 PM</li>
+              <li><img src="images/partly-cloudy-day.png"/></li>
+              <li>60˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>2 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>62˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>3 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>62˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>4 PM</li>
+              <li><img src="images/partly-cloudy-day.png"/></li>
+              <li>62˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>5 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>59˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>6 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>56˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>7 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>54˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+             <!--  <li>8 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>53˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>9 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>52˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>10 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>51˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>11 PM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>51˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>12 AM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>50˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>1 AM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>50˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+             <!--  <li>2 AM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>50˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+             <!--  <li>3 AM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>49˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>4 AM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>48˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>5 AM</li>
+              <li><img src="images/cloudy.png"/></li>
+              <li>48˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>6 AM</li>
+              <li><img src="images/partly-cloudy-night.png"/></li>
+              <li>48˚</li> -->
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <!-- <li>7 AM</li>
+              <li><img src="images/partly-cloudy-night.png"/></li>
+              <li>48˚</li> -->
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="forecast">
+      <ul class="forecast-list">
+        <li>
+          <ul>
+            <!-- <li>Saturday</li>
+            <li><img src="images/partly-cloudy-day.png"/></li>
+            <li>62˚</li>
+            <li>46˚</li> -->
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <!-- <li>Sunday</li>
+            <li><img src="images/partly-cloudy-day.png"/></li>
+            <li>58˚</li>
+            <li>48˚</li> -->
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <!-- <li>Monday</li>
+            <li><img src="images/fog.png"/></li>
+            <li>58˚</li>
+            <li>45˚</li> -->
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <!-- <li>Tuesday</li>
+            <li><img src="images/partly-cloudy-night.png"/></li>
+            <li>58˚</li>
+            <li>43˚</li> -->
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <!-- <li>Wednesday</li>
+            <li><img src="images/partly-cloudy-day.png"/></li>
+            <li>63˚</li>
+            <li>36˚</li> -->
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <!-- <li>Thursday</li>
+            <li><img src="images/clear-day.png"/></li>
+            <li>64˚</li>
+            <li>36˚</li> -->
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <!-- <li>Friday</li>
+            <li><img src="images/partly-cloudy-night.png"/></li>
+            <li>63˚</li>
+            <li>38˚</li> -->
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <!-- <li>Saturday</li>
+            <li><img src="images/rain.png"/></li>
+            <li>55˚</li>
+            <li>43˚</li> -->
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="today-details">
+      <p class="today-summary">
+        <!-- Today: Light rain on Saturday, with temperatures peaking at 64˚F on Thursday. -->
+      </p>
+      <ul class="today-details-list">
+        <li>
+          <ul>
+            <li>Sunrise:</li>
+            <li><!-- 7:23 AM --></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>Sunset:</li>
+            <li><!-- 5:09 PM --></li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li>
+          <ul>
+            <li>Chance of Rain:</li>
+            <li><!-- 0% --></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>Humidity:</li>
+            <li><!-- 86% --></li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li>
+          <ul>
+            <li>Wind:</li>
+            <li><!-- 1 mph NW --></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>Feels like:</li>
+            <li><!-- 49˚ --></li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li>
+          <ul>
+            <li>Precipitation:</li>
+            <li><!-- -- --></li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>Pressure:</li>
+            <li><!-- 30 in --></li>
+          </ul>
+        </li>
+        <li>
+        </li>
+        <li>
+          <ul>
+            <li>Visibility:</li>
+            <li><!-- 9.42 mi --></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <nav style = "display: none;">
+    <div class="next-prev-nav">
+      <div class="prev-button">
+        <a href="">◀</a>
+      </div>
+      <div class="indicator-dots">
+        <span class="dot current">•</span><span class="dot">•</span>
+      </div>
+      <div class="next-button">
+        <a href="">▶</a>
+      </div>
+    </div>
+    <div class="list-button">
+      <a href="#">☰</a>
+    </div>
+  </nav>
+  <div class="degree-conversion-button">
+    <a href="javascript:void(0)"><span class = "fahrenheit current">℉</span>/<span class = "centigrade">℃</span></a>
+  </div> 
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/weather.js"></script>
+
+  <script>
+  $(window).ready(function() {
+    Weatherapp.init();
+  })
+  </script>
+</body>
+</html>
